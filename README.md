@@ -1,6 +1,5 @@
 **Live Demo**:
-https://salaryprediction-kopehwrsigj87bq9tqv6xh.streamlit.app/
-
+https://salarypredictor-3x2tdkwsixhiniiekrtre2.streamlit.app/
 
 **1. Salary Prediction App (Python 3.9.11)**
 A simple ML-powered web app that predicts your salary based on:
@@ -37,5 +36,6 @@ requirements.txt → Python dependencies
 streamlit run App.py
 
 App will open in your browser (usually at http://localhost:8501)
+
 
 

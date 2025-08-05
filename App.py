@@ -20,7 +20,7 @@ with st.sidebar:
     st.markdown("Welcome! :wave:")
     st.caption("🏢 Predict your expected salary using Machine Learning.")
     st.markdown("---")
-    st.info("Enter your details to see your salary estimate instantly!\n\nMade with ❤️ using Streamlit.")
+    st.info("Enter your details to see your salary estimate instantly!\n\nMade with ❤️")
 
 # Main title and subtitle
 st.markdown("""
@@ -34,7 +34,7 @@ st.markdown("""
 col_blank1, col_main, col_blank2 = st.columns([1,2,1])
 with col_main:
     st.image(
-        "https://images.pexels.com/photos/669365/pexels-photo-669365.jpeg",
+        "https://www.pexels.com/photo/person-holding-debit-card-50987/",
         caption="It's time to know your worth! 💰",
         use_column_width=True
     )
@@ -98,3 +98,4 @@ else:
 
 st.markdown("---")
 st.caption("© 2024 Salary Estimation App | Powered by Sonvi Assis Noronha with Streamlit & Machine Learning 🚀")
+

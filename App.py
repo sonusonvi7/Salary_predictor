@@ -34,7 +34,7 @@ st.markdown("""
 col_blank1, col_main, col_blank2 = st.columns([1,2,1])
 with col_main:
     st.image(
-        "https://www.pexels.com/photo/person-holding-debit-card-50987/",
+        ".............................................",
         caption="It's time to know your worth! 💰",
         use_column_width=True
     )
@@ -98,4 +98,5 @@ else:
 
 st.markdown("---")
 st.caption("© 2024 Salary Estimation App | Powered by Sonvi Assis Noronha with Streamlit & Machine Learning 🚀")
+
 

@@ -33,29 +33,32 @@ st.markdown("""
 # Columns for layout symmetry
 col_blank1, col_main, col_blank2 = st.columns([1,2,1])
 with col_main:
-    st.image(
-        "https://github.com/sonusonvi7/Salary_predictor/blob/main/Salary.png",
-        caption="It's time to know your worth! 💰",
-        use_column_width=True
-    )
+    st.image("your_money_emoji_url.png", caption="Let's predict your salary!", use_column_width=True)
 
 st.markdown("---")
 
 # Inputs in a card style
-st.markdown("#### 📝 Fill out the details:")
-
-card = st.container()
-with card:
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        years_at_company = st.slider("Years at company", 0, 40, 3)
-    with col2:
-        satisfaction_level = st.slider("Satisfaction level", 0.0, 1.0, 0.7, 0.01)
-    with col3:
-        average_monthly_hours = st.slider("Avg Monthly Hours", 80, 320, 160)
-
-    st.progress(int((satisfaction_level)*100), text="Satisfaction Level Progress")
-    st.markdown(" ")
+st.markdown("""
+    <style>
+    [data-testid="stAppViewContainer"] {
+        position: relative;
+        z-index: 1;
+    }
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100vw;
+        min-height: 100vh;
+        z-index: 0;
+        object-fit: cover;
+        opacity: 0.3;    /* Adjust for subtle effect */
+    }
+    </style>
+    <video autoplay muted loop id="myVideo">
+        <source src="https://static.streamlit.io/examples/star.mp4" type="video/mp4">
+    </video>
+""", unsafe_allow_html=True)
 
 
 # Prediction logic
@@ -98,6 +101,7 @@ else:
 
 st.markdown("---")
 st.caption("© 2024 Salary Estimation App | Powered by Sonvi Assis Noronha with Streamlit & Machine Learning 🚀")
+
 
 
 
